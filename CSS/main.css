@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-image: url(/images/bg-header-desktop.png);
+    background-image: url(../images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -412,7 +412,7 @@ a:hover {
 @media (max-width: 400px) {
 
     .header {
-        background-image: url(/images/bg-header-mobile.png);
+        background-image: url(../images/bg-header-mobile.png);
     }
 
 }
