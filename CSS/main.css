@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+
+    --cyan: hsl(171, 66%, 44%);
+    --cyan-hover: hsl(171, 66%, 60%);
+    --cyan-shadow: hsl(171, 66%, 35%);
+
+
+    --blue: hsl(233, 100%, 69%);
+    --blue-hover: hsl(233, 100%, 75%);
+    --blue-shadow: hsl(233, 100%, 55%);
+
+
+    --grey: hsl(201, 11%, 66%);
+    --dark-grey: hsl(210, 10%, 33%);
+}
+
+body {
+    font-family: "Bai Jamjuree";
+    color: var(--dark-grey);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header>img {
+    width: 150px;
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.header>p {
+    width: 35%;
+}
+
+p {
+    color: var(--grey);
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+button {
+    height: 60px;
+    width: 250px;
+    border-radius: 30px;
+    border: none;
+
+    font-family: "Bai Jamjuree";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+
+    cursor: pointer;
+
+}
+
+.ios {
+    background-color: var(--cyan);
+    box-shadow: 0 3px var(--cyan-shadow);
+}
+
+.ios:hover {
+    background-color: var(--cyan-hover);
+
+}
+
+.mac {
+    background-color: var(--blue);
+    box-shadow: 0 3px var(--blue-shadow);
+}
+
+.mac:hover {
+    background-color: var(--blue-hover);
+}
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.features_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.features_head>p {
+    width: 45%;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.features_body {
+    display: flex;
+    align-items: center;
+    margin: 75px 0;
+    gap: 100px;
+}
+
+.features_body>img {
+    padding-left: 20px;
+    width: 50%;
+}
+
+.feature_list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature_list>div>p {
+    text-align: left;
+    font-size: 1rem;
+    width: 60%;
+}
+
+.access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.access_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.access_head>p {
+    width: 75%;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.access>img {
+    margin: 75px 0;
+    width: 50%;
+}
+
+.supercharge_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.supercharge_head>p {
+    width: 75%;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.supercharge_body {
+    display: flex;
+    margin: 75px 15%;
+}
+
+.sb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    width: calc(100%/3);
+}
+
+.sb>img {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.sb>p {
+    width: 90%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.logo_list {
+    display: flex;
+    gap: 150px;
+    margin: 150px 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.platform {
+    margin-bottom: 150px
+}
+
+.platform_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.platform_head>p {
+    width: 35%;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+.footer>img {
+    height: 80px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--dark-grey);
+}
+
+a:hover {
+    color: var(--cyan);
+}
+
+.socials:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ---------- MEDIA QUERIES 1200px ---------- */
+
+@media (max-width: 1200px) {
+
+    .header>p {
+        width: 65%;
+    }
+
+    .features_head>p {
+        width: 65%;
+
+    }
+
+    .platform_head>p {
+        width: 65%;
+    }
+
+    .supercharge_body {
+        margin: 75px 5%;
+    }
+}
+
+
+/* ---------- MEDIA QUERIES 800px ---------- */
+
+@media (max-width: 800px) {
+
+
+    h1 {
+        font-size: 2.5rem;
+        padding: 0 20px;
+    }
+
+    h2 {
+        padding: 0 20px;
+    }
+
+
+    .features_body {
+        margin: 75px 20px;
+    }
+
+    .feature_list>div>p {
+
+        width: 100%;
+    }
+
+    .supercharge_body {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .sb {
+        width: 100%;
+    }
+
+    .sb>p {
+        width: 65%;
+    }
+
+    .logo_list {
+        margin: 150px 50px;
+        gap: 100px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+/* ---------- MEDIA QUERIES 600px ---------- */
+
+
+@media (max-width: 700px) {
+
+    .features_body {
+        flex-direction: column;
+        margin-bottom: 0px;
+        gap: 70px;
+    }
+
+    .features_body>img {
+        width: 70%;
+    }
+
+    .feature_list {
+        text-align: center;
+    }
+
+    .feature_list>div>p {
+        text-align: center;
+        width: 65%;
+    }
+
+    .f_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .access>img {
+        width: 70%;
+    }
+
+    ul {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .platform {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* ---------- MEDIA QUERIES 600px ---------- */
+
+
+@media (max-width: 400px) {
+
+    .header {
+        background-image: url(/images/bg-header-mobile.png);
+    }
+
+}
